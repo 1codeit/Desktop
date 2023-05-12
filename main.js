@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const { menu } = require("./menu");
+require('update-electron-app')()
 
 let mainWindow;
 
@@ -19,6 +20,7 @@ function createWindow() {
       // nodeIntegration: true
     },
     frame: isWindows ? false : true //Remove frame to hide default menu
+
   });
 
   mainWindow.loadFile("index.html");

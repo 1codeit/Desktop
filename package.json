@@ -1,7 +1,7 @@
 {
-  "name": "HuskyNZ-Desktop-V2",
-  "version": "2.0.0",
-  "description": "HuskyNZ's v2 desktop app",
+  "name": "HuskyNZ-Wether-Desktop",
+  "version": "0.0.1",
+  "description": "HuskyNZ's Wether first desktop app",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -9,7 +9,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish"
   },
-  "repository": "",
+  "repository": "https://github.com/1codeit/Desktop",
   "keywords": [
     "Electron",
     "quick",

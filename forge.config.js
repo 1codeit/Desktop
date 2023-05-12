@@ -1,10 +1,14 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    icon: 'C:\Users\peter\repos\wether-desktop\im'
+  },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        iconUrl: 'https://serv.hnz.li/logo/favicon_io/default.ico',
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -23,4 +27,16 @@ module.exports = {
       config: {},
     }
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: '1codeit',
+          name: 'wether'
+        },
+        prerelease: true
+      }
+    }
+  ]
 };

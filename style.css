@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 30px;
-  background: #34475a;
+  background: #000000;
   -webkit-app-region: drag;
 }
 
@@ -48,7 +48,7 @@ button:hover {
 }
 
 #close-btn:hover {
-  background: rgb(255, 0, 0);
+  background: rgb(255, 0, 242);
 }
 
 button i {
